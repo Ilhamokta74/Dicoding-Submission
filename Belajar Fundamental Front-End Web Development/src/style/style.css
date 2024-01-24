@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #233a80 !important;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 600px 20px;
+}
+
+header::before {
+  content: " ";
+  display: block;
+  /* background-image: url("../image/corona_virus_color.svg"); */
+  width: 350px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 350px;
+  left: -120px;
+  top: -120px;
+  opacity: 0.3;
+  animation: spin 16s infinite linear;
+}
+
+.text-orange {
+  color: #f2b705;
+}
+
+.header-caption {
+  color: #2e468c;
+  background-color: #8da0d6;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.header-text {
+  text-shadow: 1px 2px 2px rgb(63, 63, 63);
+  font-size: 60px;
+}
+
+.img-illustration {
+  height: 400px;
+  object-fit: cover;
+}
+
+.header-subtext {
+  font-size: 21px;
+  line-height: 2;
+  max-width: 500px;
+  font-weight: lighter;
+}
+
+.text-gray {
+  color: #b5b5b5;
+}
+
+.btn-corona-detail:hover {
+  border-bottom: 3px solid #b8b6b2;
+}
+
+.btn-corona-detail {
+  border-bottom: 3px solid transparent;
+}
+
+.bg-dead {
+  background-color: #f24141 !important;
+}
+
+.bg-recovered {
+  background-color: #49bf5e !important;
+}
+
+.bg-confirmed {
+  background-color: #f2b035 !important;
+}
+
+.report::before {
+  content: " ";
+  height: 20px;
+  border-radius: 30px;
+  display: inline-block;
+  background-color: red;
+  width: 20px;
+  margin-right: 10px;
+  border: 2px solid black;
+}
+
+.report h3 {
+  font-size: 26px;
+  display: inline-block;
+}
+
+.report p {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 2;
+  color: #b5b5b5;
+  text-align: justify;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding-bottom: 50px;
+    background-position: 400px 20px;
+  }
+
+  .header-text {
+    text-shadow: 1px 2px 2px rgb(63, 63, 63);
+    font-size: 45px;
+  }
+
+  .header-subtext {
+    font-size: 18px;
+  }
+
+  .header-caption {
+    font-size: 16px;
+  }
+
+  .btn-corona-detail > h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-position: 300px 50px;
+    background-size: 100%;
+  }
+
+  .btn-corona-detail > h2 {
+    font-size: 25px;
+  }
+
+  .header-caption {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    height: auto;
+  }
+
+  .header-subtext {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 579px) {
+  body {
+    background-position: 150px 100px;
+    background-size: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    background-position: 50px 300px;
+    background-size: 100%;
+  }
+}
